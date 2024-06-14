@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Login Page Example</title>
+	<style>
+		/* Basic styling for the login form */
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 5px;
+			width: 300px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+		}
+		
+		/* Styling for the good login form */
+		.good-form label {
+			color: #4CAF50;
+		}
+		
+		.good-form input[type="text"], .good-form input[type="password"] {
+			border: 1px solid #4CAF50;
+		}
+		
+		/* Styling for the bad login form */
+		.bad-form label {
+			color: #f44336;
+		}
+		
+		.bad-form input[type="text"], .bad-form input[type="password"] {
+			border: 1px solid #f44336;
+		}
+		
+		.message {
+			margin-top: 20px;
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Page Example</h1>
+	
+	<!-- Good Login Form -->
+	<form class="good-form">
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" placeholder="Enter your username" required>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+		<button type="submit">Log in</button>
+	</form>
+	
+	<!-- Bad Login Form -->
+	<form class="bad-form">
+		<label for="username">User ID:</label>
+		<input type="text" id="username" name="username" placeholder="Type your User ID here" required>
+		<label for="password">Enter Password</label>
+		<input type="password" id="password" name="password" placeholder="Password" required>
+		<button type="submit">Submit</button>
+		<p class="message">Invalid username or password. Please try again.</p>
+	</form>
+	
+</body>
+</html>
